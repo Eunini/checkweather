@@ -46,37 +46,37 @@ function getUserLocation() {
                 const weatherFeel = document.getElementById("feels");
                 weatherFeel.textContent = `${feel}°C`;
 
-                if(data.weather[0].main == "Clouds") {
+                if(weatherData.weather[0].main == "Clouds") {
                     weatherIcon.src = "images/clouds.png"
                     document.body.style.backgroundImage = "url('images/cloudy.jpeg')";
                 
                   }
-                  else if(data.weather[0].main == "Clear") {
+                  else if(weatherData.weather[0].main == "Clear") {
                     weatherIcon.src = "images/clear.png"
                     document.body.style.backgroundImage = "url('clear.jpeg')";
                   }
                 
-                  else if(data.weather[0].main == "Rain") {
+                  else if(  weatherData.weather[0].main == "Rain") {
                     weatherIcon.src = "images/rain.png"
                     document.body.style.backgroundImage = "url('images/rainy.jpeg')";
                   }
                 
-                  else if(data.weather[0].main == "Drizzle") {
+                  else if(weatherData.weather[0].main == "Drizzle") {
                     weatherIcon.src = "images/drizzle.png"
                     document.body.style.backgroundImage = "url('images/drizzle.jpeg')";
                   }
                 
-                  else if(data.weather[0].main == "Mist") {
+                  else if(weatherData.weather[0].main == "Mist") {
                     weatherIcon.src = "images/mist.png"
                     document.body.style.backgroundImage = "url('images/mist.jpeg')";
                   }
                 
-                  else if(data.weather[0].main == "Wind") {
+                  else if(weatherData.weather[0].main == "Wind") {
                     weatherIcon.src = "images/rain.png"
                     document.body.style.backgroundImage = "url('images/windy.jpg')";
                   }
                   
-                  else if(data.weather[0].main == "Snow") {
+                  else if(weatherData.weather[0].main == "Snow") {
                     weatherIcon.src = "images/snow.png"
                     document.body.style.backgroundImage = "url('images/snow.jpeg')";
                   }

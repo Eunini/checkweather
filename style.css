@@ -8,7 +8,7 @@
 body {
   z-index: 1;
   scroll-behavior: smooth;
-  height: 140vh;
+  height: 120vh;
   /* background: rgb(103,169,208);
   background: linear-gradient(0deg, rgba(103,169,208,1) 0%, rgba(135,206,235,1) 66%, rgba(135,206,235,1) 76%); */
   background-image: url(clear.jpeg);
@@ -47,7 +47,9 @@ button {
   margin: 10px;
   font-size: 18px;
 }
-#weatherInfo {
+#weatherInfo { 
+    display:flex;
+    flex-direction: row;
   margin-top: 20px;
 }
 #weatherInfo .city {
